@@ -3,28 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meteora</title>
-    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <title>METEORA</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="cabecalho">
         <nav class="menu">
-            <img class="logo" src="imagens/logo.png" alt="meteora">
-            <a class="link-menu ativo" href="home.html">Home</a>
-            <a class="link-menu" href="lojas.html">Lojas</a>
-            <a class="link-menu" href="novidades.html">Novidades</a>
-            <a class="link-menu" href="promocoes.html">Promoções</a>
+            <img src="images/logo.png" alt="METEORA" class="logo">
+            <a href="home.html" class="link-menu ativo">Home</a>
+            <a href="lojas.html" class="link-menu">Lojas</a>
+            <a href="novidades.html" class="link-menu">Novidades</a>
+            <a href="promocoes.html" class="link-menu">Promoções</a>
         </nav>
         <form class="pesquisa">
-            <input type="text" class="campo-texto" placeholder="Digite o produto">
+            <input type="text" class="campo-texto" placeholder="Digite o produto" maxlength="50" minlength="5" required>
             <button class="botao">Buscar</button>
         </form>
     </header>
     <div class="banner">
         <img src="imagens/banner.png" alt="banner meteora" class="imagem-banner">
     </div>
-
+    <div class="categorias">
+        <h2 class="titulo">Busque por categoria:</h2>
+        <nav class="menu-categorias">
+            <a href="#" class="item-categoria">
+                <img src="imagens/categoria-camisetas.png" class="foto-categoria" alt="categoria de camisetas">
+                <p class="texto-categoria">Camisetas</p>
+            </a>
+            <a href="#" class="item-categoria">
+                <img src="imagens/categoria-bolsas.png" class="foto-categoria" alt="categoria de bolsas">
+                <p class="texto-categoria">Bolsas</p>
+            </a>
+            <a href="#" class="item-categoria">
+                <img src="imagens/categoria-calcados.png" class="foto-categoria" alt="categoria de calçados">
+                <p class="texto-categoria">Calçados</p>
+            </a>
+            <a href="#" class="item-categoria">
+                <img src="imagens/categoria-calcas.png" class="foto-categoria" alt="categoria de calças">
+                <p class="texto-categoria">Calças</p>
+            </a>
+            <a href="#" class="item-categoria">
+                <img src="imagens/categoria-casacos.png" class="foto-categoria" alt="categoria de casacos">
+                <p class="texto-categoria">Casacos</p>
+            </a>
+            <a href="#" class="item-categoria">
+                <img src="imagens/categoria-oculos.png" class="foto-categoria" alt="categoria de óculos">
+                <p class="texto-categoria">Óculos</p>
+            </a>
+        </nav>
+    </div>
+ 
+    <div class="produtos">
+        <h2 class="titulo">Produtos que estão bombando!</h2>
+        <div class="lista-produtos">
+            <div class="item-produto">
+                <img src="imagens/camiseta.png" class="foto-produto">
+                <h3 class="titulo-produto">Camiseta Conforto</h3>
+                <p class="descricao-produto">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.</p>
+                <h3 class="preco-produto">R$ 70,00</h3>
+                <a href="#" class="botao-produto">Ver mais</a>
+            </div>
+            <div class="item-produto">
+                <img src="imagens/calca.png" class="foto-produto">
+                <h3 class="titulo-produto">Calça Alfaiataria</h3>
+                <p class="descricao-produto">Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!</p>
+                <h3 class="preco-produto">R$ 180,00</h3>
+                <a href="#" class="botao-produto">Ver mais</a>
+            </div>
+            <div class="item-produto">
+                <img src="imagens/tenis.png" class="foto-produto">
+                <h3 class="titulo-produto">Tênis Chunky</h3>
+                <p class="descricao-produto">Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.</p>
+                <h3 class="preco-produto">R$ 250,00</h3>
+                <a href="#" class="botao-produto">Ver mais</a>
+            </div>
+            <div class="item-produto">
+                <img src="imagens/jaqueta.png" class="foto-produto">
+                <h3 class="titulo-produto">Jaqueta Jeans</h3>
+                <p class="descricao-produto">Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
+                <h3 class="preco-produto">R$ 150,00</h3>
+                <a href="#" class="botao-produto">Ver mais</a>
+            </div>
+            <div class="item-produto">
+                <img src="imagens/oculos.png" class="foto-produto">
+                <h3 class="titulo-produto">Óculos Redondo</h3>
+                <p class="descricao-produto">Armação metálica em grafite com lentes arredondadas. Sem erro!</p>
+                <h3 class="preco-produto">R$ 120,00</h3>
+                <a href="#" class="botao-produto">Ver mais</a>
+            </div>
+            <div class="item-produto">
+                <img src="imagens/bolsa.png" class="foto-produto">
+                <h3 class="titulo-produto">Bolsa coringa</h3>
+                <p class="descricao-produto">Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!</p>
+                <h3 class="preco-produto">R$ 120,00</h3>
+                <a href="#" class="botao-produto">Ver mais</a>
+            </div>
+        </div>
+    </div>
+ 
+    
     <script src="app.js"></script>
 </body>
 </html>
